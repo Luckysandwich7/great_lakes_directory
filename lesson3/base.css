@@ -1,0 +1,203 @@
+@charset "UTF-8"; /* not necessary */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+/* phone or baseline views **************************/
+header {
+	background-color: #17221C;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+footer {
+	background-color: #14272E;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main,
+footer {
+	max-width: 900px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 1.1rem;
+}
+h2 {
+	color: #536878;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 900px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+	margin-bottom: 10px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, white) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+
+.active {
+	color: #6e9078;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main picture {
+	display: none;
+	margin: 1rem;
+}
+
+footer p {
+	padding: .5rem;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+	 		nav ul { display: flex; }
+		  nav ul li { flex: 1 1 auto; } 
+
+	/* Grid *********************/
+/* 	nav ul {
+		display: grid;
+		/*grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	} */
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	nav a:hover {
+		/* 	background-color: #bbb;
+	color: #36454f; */
+		--d: 75%;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	h1 {
+		font-size: 2rem;
+	}
+	nav a {
+		font-size: 1.1rem;
+	}
+}
+
+
+/* Code for Color Scheme page */
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.colorcolumn {
+	background-color: #f6f6f6;
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px;
+}
+
+.headerbackground {
+	background-color: #17221C;
+}
+
+section {
+	display: block;
+}
+
+section p {
+	padding: 1rem;
+}
+
+h3, h4 {
+	border-radius: 10px 10px 0 0;
+	padding: 5px;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.twocolumns {
+	display: grid;
+	grid-template-columns: auto auto;
+	border-radius: 10px;
+	padding: 10px;
+	grid-gap: 10px;
+}
+
+div section {
+	background-color: #36454f;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.menu {
+	padding: 1rem;
+	color: white;
+	background-color: #36454f;
+}
+
+.subheadline {
+	padding: .65rem;
+	background-color: #14272E;
+}
+
+.contentbody {
+	background-color: #f6f6f6;
+	border-radius: 0 0 10px 10px;
+}
+
+.homeimage {
+	margin: 20px;
+}
+
+.portriatimage {
+	height: 350px;
+	margin: 5px;
+}
+
+.list {
+	padding: 2px;
+}

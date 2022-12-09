@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan K. Alvord | WDD 230</title>
+    <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="images\Temple Inn & Suites.png" alt="Temple Inn & Suites Logo"></a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="temple.html">Temples</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.jpg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images\instagram.jpg" alt="Instagram Icon"></a>
+        </div>
+    </header>
+    <body>
+    <main>
+        <div class="section_0">
+        <section class="templedisplay">
+            <!--holds Json information to auto rotate different temples-->
+            <h2>Temple of the Day</h2>
+            <h3>Mount Timpanogos Temple</h3>>
+            <p>The Mount Timpanogos Utah Temple is the 49th operating temple of The Church of Jesus Christ of Latter-day Saints. The temple is located in American Fork, Utah and is the second temple built in Utah County and the ninth in Utah. </p>
+            <a class="c-btn" href="temple.html">View Temple List</a>
+        </section>
+        <section class="reservation">
+            <h2>Reservation</h2>
+            <h3>Looking for a Temple to Visit?</h3>
+            <p>Click the link below to reserve a date and time for your temple visit with ease!</p>
+            <a class="c-btn" href="reservation.html">Reserve Now</a>
+        </section>
+        </div>
+        <div class="section_1">
+           <section>
+                <h2>Weather</h2>
+                <div class="weather">
+
+
+                    <div class="weather1">
+                        <h3>Day 1 of weather</h3>
+                        <figure>
+                            <img src="" alt="" id="icon0" />
+                            <figcaption id="captionDesc0"></figcaption>
+                        </figure>
+                        <p>Temperature: <span id="temp0"></span> &deg;F</p>
+                        <p>Humidity: <span id="humidity0"></span></p>
+                    </div>
+
+                    <div class="weather2">
+                        <h3>Day 2 of weather</h3>
+                        <figure>
+                            <img src="" alt="" id="icon1" />
+                            <figcaption id="captionDesc1"></figcaption>
+                        </figure>
+                        <p>Temperature: <span id="temp1"></span> &deg;F</p>
+                        <p>Humidity: <span id="humidity1"></span></p>
+                    </div>
+
+                    <div class="weather3">
+                        <h3>Day 3 of weather</h3>
+                        <figure>
+                            <img src="" alt="" id="icon2" />
+                            <figcaption id="captionDesc2"></figcaption>
+                        </figure>
+                        <p>Temperature: <span id="temp2"></span> &deg;F</p>
+                        <p>Humidity: <span id="humidity2"></span></p>
+                    </div>
+                </div>
+           </section>
+        </div>
+        <div class="section_2">
+            <section class="googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.6526329120593!2d-111.8914789597786!3d40.77087627750453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f507c72c8039%3A0xe67a34043a62cb5e!2sChurch%20Office%20Building!5e0!3m2!1sen!2sus!4v1658194236951!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    </body>
+    <footer>
+        <div class="c-contact">
+            <h3>Contact</h3>
+            <h5>Office: <a href="tel:8018888888">(801) 888-8888</a></h5>
+            <h5>50 E North Temple St</h5>
+            <h5>Salt Lake City, UT 84150</h5>
+            <h5>Email: <a href="mailto:TN&S@churchofjesuschrist.org">TN&S@churchofjesuschrist.org</a></h5>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.jpg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images\instagram.jpg" alt="Instagram Icon"></a>
+        </div>
+        <div class="disclosure">
+            <h3>©Temple Inn & Suites | Ryan Alvord | WDD230 Final Project</h3>
+            <p>Weather service provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quasi blanditiis commodi laboriosam perspiciatis sint repellat, hic dolorum numquam incidunt facilis beatae dolor doloribus excepturi quia similique labore quos voluptate.</p>
+        </div>
+    </footer>
+
+    <script src="stylesheets\scripts.js"></script>
+    <script src="stylesheets\weather.js"></script>
+    
+</html>

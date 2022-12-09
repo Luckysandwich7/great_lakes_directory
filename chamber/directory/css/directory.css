@@ -1,0 +1,49 @@
+h2 {
+    margin-top: 1rem;
+}
+
+p {
+    color: #ffffff;
+    margin: 3px;
+}
+
+img{
+    max-width: 200px;
+    box-shadow: 5px 10px 18px #000000;
+    margin: 1rem;
+}
+
+.cards {
+    grid-column: 1/4;
+    display: grid;
+}
+
+.cards .card {
+    align-items: center;
+    background-color: #36454f;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.cards .card h3 {
+    padding: 1rem;
+}
+
+.cards .card p {
+    padding: 0
+}
+
+.cards .card img{
+    max-width: 200px;
+    box-shadow: 5px 10px 18px #000000;
+    margin: 1rem;
+}
+
+.grids {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grids .card {
+    display: flex;
+    flex-direction: column;
+}

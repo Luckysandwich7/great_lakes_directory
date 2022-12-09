@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan K. Alvord | WDD 230</title>
+    <meta name="description" content="Assignment portal for Ryan Alvord in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images\GreakLakesLogo.jpg" alt="Great Lakes Commerce Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="chamber/index.html">Home</a></li>
+                        <li class="active"><a href="chamber/discover/discover.html">Discover</a></li>
+                        <li><a href="chamber/directory/directory.html">Directory</a></li>
+                        <li><a href="chamber/join/join.html">Join</a></li>    
+                    </ul>
+                <h2 class="date"></h2>
+        </nav>
+    </header>
+    <main>
+        <section class="natureImages">
+            <h2>Beautiful Seasons
+                <picture>
+                    <img class="deerImage"src="images/deer.webp" data-src="images/deer.webp" alt='deer at lake'>
+                </picture>
+            </h2>
+            <h2>Our Natural Lakes
+                <picture>
+                    <img class="hikingImage"src="images/hiking.webp" data-src="images/hiking.webp" alt="hikers looking at lake">
+                </picture>
+            </h2>
+        </section>
+        <section class="natureImages">
+            <h2>Our Humble Town
+                <picture>
+                    <img class="towncenter"src="images/towncenter.webp" data-src="images/towncenter.webp" alt='Center of Town'>
+                </picture>
+            </h2>
+            <h2>Our Natural Lakes
+                <picture>
+                    <img class="lighthouse"src="images/lighthouse.webp" data-src="images/lighthouse.webp" alt="Lighthouse at the Lakes">
+                </picture>
+            </h2>
+        </section>
+        <section class="natureImages">
+            <h2>Town Events
+                <picture>
+                    <img class="parade"src="images/parade.webp" data-src="images/parade.webp" alt='Town Parade'>
+                </picture>
+            </h2>
+            <h2>Our Natural Lakes
+                <picture>
+                    <img class="fishing"src="images/fishing.webp" data-src="images/fishing.webp" alt="Fishing at the Great Lakes">
+                </picture>
+            </h2>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="copyDate"></span> <strong>|</strong> Ryan K. Alvord <strong>|</strong> Utah</p>
+        <p>Last Updated: <span id="dateMod"></span></p>
+    </footer>
+    <script src="javascript/stylesheet.js"></script>
+    <script src="javascript/date.js"></script>
+</body>
+</html>
